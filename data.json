@@ -2,14 +2,15 @@
   "refresh": 15,
   "players": [
     {"name":"VANToni","points":3,"played":8,"wins":3,"loss":5},
-    {"name":"Eklent Kaci","points":18,"played":24,"wins":6,"loss":2},
-    {"name":"Francisco Sanchez Ruiz","points":16,"played":24,"wins":5,"loss":3},
-    {"name":"Robbie Capito","points":15,"played":24,"wins":5,"loss":3},
-    {"name":"Johann Chua","points":14,"played":24,"wins":4,"loss":4}
+    {"name":"GAN Alvaro","points":6,"played":8,"wins":6,"loss":2},
+    {"name":"Francisco Sanchez Ruiz","points":5,"played":8,"wins":5,"loss":3},
+    {"name":"Robbie Capito","points":5,"played":8,"wins":5,"loss":3},
+    {"name":"Johann Chua","points":4,"played":8,"wins":4,"loss":4}
+    {"name":"GAN Aurel","points":4,"played":8,"wins":4,"loss":4}
   ],
   "matches":[
-    {"table":1,"player1":"Van","player2":"Melling","score1":5,"score2":3,"status":"DONE"},
-    {"table":2,"player1":"Capito","player2":"Ruiz","score1":4,"score2":5,"status":"DONE"},
-    {"table":3,"player1":"Kaci","player2":"Chua","score1":2,"score2":2,"status":"DONE"}
+    {"match":1,"player1":"Van","player2":"FSR","score1":5,"score2":3,"status":"DONE"},
+    {"match":2,"player1":"Capito","player2":"GAN","score1":4,"score2":5,"status":"DONE"},
+    {"match":3,"player1":"Aurel","player2":"Chua","score1":5,"score2":2,"status":"DONE"}
   ]
 }
