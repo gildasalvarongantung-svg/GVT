@@ -50,7 +50,7 @@ div.innerHTML=`
 matches.appendChild(div);
 });
 
-setTimeout(loadData, data.refresh * 1000);
+setTimeout(loadData, data.refresh * 15);
 }
 
 loadData();
