@@ -1,7 +1,7 @@
 {
   "refresh": 15,
   "players": [
-    {"name":"VAN  Toni","points":18,"played":24,"wins":6,"loss":2},
+    {"name":"VANToni","points":3,"played":8,"wins":3,"loss":5},
     {"name":"Eklent Kaci","points":18,"played":24,"wins":6,"loss":2},
     {"name":"Francisco Sanchez Ruiz","points":16,"played":24,"wins":5,"loss":3},
     {"name":"Robbie Capito","points":15,"played":24,"wins":5,"loss":3},
