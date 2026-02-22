@@ -1,6 +1,6 @@
-fetch("data.json")
-.then(res => res.json())
-.then(data => {
+async function loadData(){
+const res = await fetch("data.json?cache=" + Date.now());
+const data = await res.json();
 
 let leaderboard = document.getElementById("leaderboard");
 
@@ -8,8 +8,10 @@ leaderboard.innerHTML = `
 <tr>
 <th>#</th>
 <th>Player</th>
-<th>Points</th>
-<th>Played</th>
+<th>Pts</th>
+<th>P</th>
+<th>W</th>
+<th>L</th>
 </tr>
 `;
 
@@ -22,21 +24,33 @@ row.innerHTML = `
 <td>${p.name}</td>
 <td>${p.points}</td>
 <td>${p.played}</td>
+<td>${p.wins}</td>
+<td>${p.loss}</td>
 `;
 });
 
-let matchesBox = document.getElementById("matches");
+let matches = document.getElementById("matches");
+matches.innerHTML="";
 
 data.matches.forEach(m=>{
-let div = document.createElement("div");
-div.className = "match";
+let div=document.createElement("div");
+div.className="match";
 
-div.innerHTML = `
+let statusClass =
+m.status === "LIVE"
+? "live"
+: "finished";
+
+div.innerHTML=`
 <span class="table">Table ${m.table}</span>
-<span>${m.p1} ${m.s1} - ${m.s2} ${m.p2}</span>
+<span>${m.player1} ${m.score1} - ${m.score2} ${m.player2}</span>
+<span class="${statusClass}">${m.status}</span>
 `;
 
-matchesBox.appendChild(div);
+matches.appendChild(div);
 });
 
-});
+setTimeout(loadData, data.refresh * 1000);
+}
+
+loadData();
