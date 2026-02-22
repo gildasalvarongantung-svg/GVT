@@ -6,8 +6,7 @@
     {"name":"Francisco Sanchez Ruiz","points":5,"played":8,"wins":5,"loss":3},
     {"name":"Robbie Capito","points":5,"played":8,"wins":5,"loss":3},
     {"name":"Johann Chua","points":4,"played":8,"wins":4,"loss":4}
-    {"name":"GAN Aurel","points":4,"played":8,"wins":4,"loss":4}
-  ],
+   ],
   "matches":[
     {"match":1,"player1":"Van","player2":"FSR","score1":5,"score2":3,"status":"DONE"},
     {"match":2,"player1":"Capito","player2":"GAN","score1":4,"score2":5,"status":"DONE"},
