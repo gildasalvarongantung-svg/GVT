@@ -1,31 +1,67 @@
 body{
-background:#0f172a;
+background:#0b1220;
 color:white;
 font-family:Arial;
-text-align:center;
+margin:0;
 }
 
 header{
 background:linear-gradient(90deg,#ff7a18,#ff3d3d);
-padding:20px;
+padding:18px;
+text-align:center;
 font-size:22px;
+font-weight:bold;
+}
+
+.container{
+width:95%;
+margin:auto;
+}
+
+h2{
+margin-top:25px;
 }
 
 table{
-width:90%;
-margin:auto;
+width:100%;
 border-collapse:collapse;
 background:#111827;
+border-radius:10px;
+overflow:hidden;
 }
 
 td,th{
-padding:12px;
-border-bottom:1px solid #333;
+padding:14px;
+border-bottom:1px solid #222;
+}
+
+th{
+color:#9ca3af;
+font-size:14px;
+}
+
+.rank{
+background:#ef4444;
+padding:4px 10px;
+border-radius:20px;
+font-weight:bold;
+}
+
+.matches{
+margin-top:20px;
 }
 
 .match{
 background:#1f2937;
-margin:10px;
-padding:10px;
-border-radius:6px;
+margin-bottom:10px;
+padding:14px;
+border-radius:8px;
+display:flex;
+justify-content:space-between;
+font-size:18px;
+}
+
+.table{
+color:#f59e0b;
+font-weight:bold;
 }
